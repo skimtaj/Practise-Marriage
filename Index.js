@@ -229,7 +229,7 @@ app.get('/Pdf_User/:id', async function (req, res) {
       return pdfBytes;
     }
 
-    const pdfBytes = await CreatePdf('../Pdf/Marriage Certificate.pdf', pdfData);
+    const pdfBytes = await CreatePdf('./Pdf/Marriage Certificate.pdf', pdfData);
 
 
     res.setHeader('Content-Type', 'application/pdf');
